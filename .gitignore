@@ -1,0 +1,10 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/ConsoleApp/obj
+/ConsoleApp/bin/Debug/netcoreapp2.1
+/.vs
+/WebApi/WebApi/bin/Debug/netcoreapp2.1
+/WebApi/.vs
+/WebApi/WebApi/obj
