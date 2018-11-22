@@ -26,6 +26,7 @@ namespace WebApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddMvc().AddXmlSerializerFormatters();
+            services.AddSingleton<IInc, IncImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

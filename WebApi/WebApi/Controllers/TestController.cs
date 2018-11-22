@@ -11,6 +11,13 @@ namespace WebApi.Controllers
     //[ApiController]
     public class TestController : ControllerBase
     {
+        private readonly IInc _inc;
+
+        public TestController(IInc inc)
+        {
+            _inc = inc;
+        }
+
         [HttpGet("{id}")]
         public ActionResult<string> Get(string id)
         {
@@ -20,6 +27,9 @@ namespace WebApi.Controllers
         [HttpPost("{id}")]
         public string Post([FromBody]Dummy dum)
         {
+            if (!ModelState.IsValid)
+                return "El modelo no es válido";
+
             return dum.i + dum.s + dum.d;
         }
 
