@@ -30,7 +30,7 @@ namespace WebApi.Controllers
             if (!ModelState.IsValid)
                 return "El modelo no es válido";
 
-            return dum.i + dum.s + dum.d;
+            return _inc.Inc() + " -> " + dum.i + dum.s + dum.d;
         }
 
         [HttpPut("{id}")]
