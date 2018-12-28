@@ -1,4 +1,4 @@
 # firefighter-drone
-Control system for firefighter drones
+Solution for firefighting drones
 
-Based on a series of distribud drone-controllers, a microservices central hub and a Angular frontend.
+Based on a series of distributed drone-controllers, a microservices central hub and an Angular frontend.
