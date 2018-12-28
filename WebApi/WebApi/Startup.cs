@@ -40,6 +40,7 @@ namespace WebApi
             app.UseMvc();
             app.UseStaticFiles();
             app.UseWelcomePage();
+            app.UseCors();
         }
     }
 }
